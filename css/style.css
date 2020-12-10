@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Nunito Sans", sans-serif;
+  }
+
+  
+  .container {
+    margin: 0 auto;
+    width: 1096px;
+  }
+
+.page-header {
+  display: flex;
+  background: gray;
+  border-bottom: 1px solid rgb(128,128,128);
+}
+
+  .page-header .container {
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+  }
+  
+  .page-nav-list {
+    display: flex;
+  }
+  
+  .page-nav-list :hover {
+    width: 100%;
+    background: gray;
+    opacity: 0.7;
+    width: auto;
+    color: white;
+    transition: 0.3s;
+    box-shadow: 0px 0px 68px 24px rgba(0,0,0,0.75);
+  }
+
+  li:nth-child(4) {
+    border-right: 1px solid rgb(128,128,128);
+  }
+
+  .page-nav-list li {
+    display: flex;
+    padding: 20px;
+    height: 85px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(128,128,128);
+    border-left: 1px solid rgb(128,128,128);
+  }
+  .page-nav-list a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .banner {
+    height: 700px;
+    background-image: url(../images/main-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    margin-top: -85px;
+    box-shadow: inset 0px 0px 118px -40px rgba(0,0,0,0.75);
+  }
+  
+  .banner-title {
+    display: flex;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+ 
+  
+  .banner-text {
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    opacity: .6;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+
+  .btn {
+    border: none;
+    cursor: pointer;
+    padding: 20px 50px;
+    border-radius: 35px;
+    margin: 15px;
+    text-transform: uppercase;
+  }
+
+  .btn:hover {
+    color: brown;
+    box-shadow: inset 1px 1px 10px -1px rgba(0,0,0,0.51);
+  }
+  
+  .btn--primary {
+    background: red;
+    color: white;
+  }
+  
+  .btn--secondary {
+    color: red ;
+  }
+
+
+
+  #square {
+    display: flex;
+    font-size: 65px; /* Sterowanie rozmiarem figury. */
+    width: 1em;
+    height: 1em;
+    background-color: red;
+    margin: -32px auto 0;
+    transform: rotate( 45deg );
+    box-shadow: 0px 0px 0px 10px rgba(194,179,177,0.05);
+  }
+
+  .arrow {
+    transform: rotate(-45deg);
+    align-content: center;
+    max-height: 20px;
+    margin: 20px;
+    
+  }
+
+
+
+
+
+  .content-title {
+    color: red;
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 40px;
+    justify-content: center;
+  }
+
+  .sp1 {
+    color: black;
+  }
+  
+  .page-content .container {
+    display: flex;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+
+  .article {
+    text-align: left;
+    max-width: 340px;
+  }
+
+  .article-photo {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+  }
+  .article-photo-img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .article-title {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 30px auto;
+  }
+  .article-text {
+    color: #B0AEAB;
+    margin-bottom: 25px;
+    max-height: 60px;
+    overflow: hidden;
+    font-size: 15px;
+  }
+  .article-btn {
+    background: red;
+    padding: 15px 35px;
+    border: none;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 50px;
+    align-items: center;
+    margin: 0px;
+  }
+
+
+
+
+
+
+  .content-title1 {
+    color: red;
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }
+
+  .sp2 {
+    color: white;
+  }
+
+  .page-content2 {
+    background-color: rgb(39, 38, 43);
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
+
+  .page-content2 .container {
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .article2 {
+    text-align: center;
+    margin-right: 30px;
+  }
+
+  .article2:nth-last-child(1) {
+    margin-right: 0px;
+  }
+
+    
+  .article-photo2 {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+    border-radius: 10000px;
+  }
+  .circle-article-photo-img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .article-title2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 30px auto;
+    color: white;
+  }
+  .article-text2 {
+    color: #B0AEAB;
+    margin-bottom: 25px;
+    max-height: 60px;
+    overflow: hidden;
+    font-size: 15px;
+  }
+  .article-btn {
+    background: red;
+    padding: 15px 35px;
+    border: none;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 50px;
+    align-items: center;
+    margin: 0px;
+  }
+
+  .article-btn:hover {
+    color: #fff;
+    box-shadow: inset 1px 1px 10px -1px rgba(0,0,0,0.51);
+  }
+
+
+
+
+
+  .content-title {
+    color: red;
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 40px;
+    justify-content: center;
+  }
+
+  .sp1 {
+    color: black;
+  }
+
+  .article-photo-img3 {
+  max-width: 500px;
+  margin-right: 20px;
+  float: left;
+  }
+
+.article3 {
+  text-align: justify;
+  font-size: 15px;
+}
+
+.article-text3 {
+  margin-bottom: 15px;
+}
+
+
+
+
+.page-footer {
+  display: flex;
+  background-color: rgb(39, 38, 43);
+  height: 200px;
+}
+
+.page-footer .container {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.page-footer .container:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer-nav {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.page-footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 90px;
+  text-align: left;
+  width: 570px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+a:hover {
+  color: red;
+}
+
+.page-footer-copyright {
+  display: flex;
+  width: auto;
+}
+
